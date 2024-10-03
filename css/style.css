@@ -286,7 +286,7 @@ h3 {
   height: 175px;
   padding-left: 20px;
 }
-.button--form{
+.first-screen__button{
   background-color: var(--color-blue);
   padding: 20px 19px 20px 19px;
   border: var(--color-blue);
@@ -386,7 +386,7 @@ h3 {
   justify-content: center;
 }
 
-.footer__f{
+.footer__container{
   display: flex;
   max-width: 1150px;
   width: 100%;
@@ -395,7 +395,7 @@ h3 {
   padding:50px 0px 40px 0px;
 }
 
-.footer__soc{
+.footer__info{
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -406,13 +406,13 @@ h3 {
   gap: 21.88px;
 }
 
-.footer__soc-family{
+.footer__name{
   color: var(--color-white);
   font-size: 21px;
   font-family: var(--font-family-accept);
 }
 
-.footer__soc-c{
+.footer__rights{
   font-size: 13px;
   color: var(--color-white);
   line-height: 164.1%;
