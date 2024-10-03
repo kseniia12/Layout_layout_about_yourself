@@ -69,7 +69,7 @@
  }
  
  html {
-   height: 100%;
+
  }
  
  html,
@@ -78,8 +78,7 @@
  }
  
  body {
-   min-height: 100%;
-   line-height: 1.5;
+
  }
  
  svg *[fill] { fill: currentColor }

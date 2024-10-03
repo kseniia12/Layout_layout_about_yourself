@@ -82,6 +82,7 @@ h3 {
 .menu__list {
   display: flex;
   gap: 42px;
+  align-items:center;
 }
 
 .menu__link {
@@ -91,7 +92,10 @@ h3 {
   letter-spacing: 1,2px;
   line-height: 164.1%;
 }
-
+.menu__link_activ{
+  color: var(--color-blue);
+  text-decoration: none;
+}
 .header__content {
   display: flex;
   justify-content: flex-end;
@@ -146,7 +150,9 @@ h3 {
   gap: 50px; 
   padding: 112px 0px 100px 0px;
 }
-
+.autobiography__title{
+  padding: 0px;
+}
 .autobiography__text {
   max-width: 540px;
   text-align: center;
@@ -204,6 +210,8 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  max-width: 445px;
+  width: 100%;
 }
 
 .skills__title{
@@ -221,6 +229,22 @@ h3 {
 .skills__content{
   display: flex;
   flex-direction: column;
+  gap: 20px;
+}
+
+.skills__photoshop{
+  padding: 0px;
+}
+
+.block__parent{
+  background-color: var(--color-gray);
+  width: 100%;
+  height: 4px;
+}
+.block__child{
+  background-color: var(--color-blue);
+  width: 79%;
+  height: 4px;
 }
 
 .slills__foto{
@@ -272,7 +296,7 @@ h3 {
   display: flex;
   gap: 30px;
 }
-.finput__name{
+.input__name{
   max-width: 255px;
  padding-left: 20px;
   text-align: left;
@@ -360,24 +384,43 @@ h3 {
   max-height: 100px;
   width: 100%;
   inline-size: 8;
-  top: 250px;
-  left: 505px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .img{
-  display: flex;
+  /* display: flex; */
   background-color: var(--color-white);
 }
 .img__container{
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /* display: flex;
   flex-wrap: wrap;
   padding: 28px 0px 28px 0px;
-  max-height: 1920px;
+  max-height: 1920px; */
 }
-.img__list{
+
+/* .img__photo{
   max-width: 480px;
-  max-height: 480px;
+  min-width: 480px;
   width: 100%;
+} */
+
+
+
+.img__list{
+  width: 480px;
+  height: 480px;
+  width: 100%;
+  background-image: url("../img/TaskBoard.png");
+}
+.img__list:hover{
+  width: 480px;
+  height: 480px;
+  width: 100%;
+  background-color:#EEEFF1;
 }
 
 .footer{
@@ -417,14 +460,20 @@ h3 {
   color: var(--color-white);
   line-height: 164.1%;
 }
-
-@media (max-width: 685px) {
+.icons__group{
+  display: flex;
+  gap: 21.88px;
+}
+.menu__link{
+  max-width: 43.75px;
+  max-height: 40px;
+  width: 100%;
+}
+@media (max-width: 375px) {
   .header__menu{
       display: none;
   } 
-  .header__content{
-    flex-direction: column;
+  .header__navigation{
     justify-content: center;
-    align-items: center;
   }
 }
