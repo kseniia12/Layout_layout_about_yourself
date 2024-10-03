@@ -65,30 +65,18 @@ h3 {
   padding-bottom: 152px;
 }
 
-.header__nav {
+.header__navigation {
   display: flex;
   justify-content: space-between;
   margin: 40px 29px 0px 16px;
   align-items:center;
 }
 
-.header__logodiv { 
-  max-width: 96px;
-  max-height: 60px;
-}
-
-#aa{
-  color: var(--color-blue);
-  line-height: 164.1%;
-}
-
-.header__logo {
-  font-family: Revalia;
+.header__logo { 
+  font-family: Revalia; 
   color: #34547A;
   font-size: 48px;
-  line-height: auto;
-  -webkit-text-stroke: 1px black;
-  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  text-align: center;
 }
 
 .menu__list {
@@ -96,7 +84,7 @@ h3 {
   gap: 42px;
 }
 
-.menu_link {
+.menu__link {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--color-black);
@@ -111,7 +99,8 @@ h3 {
   align-items:center;
 }
 
-.desing__image {
+.header__image {
+  display: block;
   max-width: 357px;
   max-height: 233.7px;
   width: 100%;
@@ -123,24 +112,23 @@ h3 {
   flex-direction: column;
 }
 
-.block-text__title {
+.design__title {
   font-family: var(--font-family-accept);
   color: var(--color-black);
   font-size: 48px;
   line-height: 164.1%;
 }
 
-.block-text__text{
+.design__text{
   line-height: 164.1%;
   margin-top: 47px;
 }
 
-.block-text__button-text {
+.button {
   padding: 25px 41px 25px 41px;
   background-color: var(--color-blue);
   margin-top: 60px;
-  max-width: 225px;
-  max-height: 65px;
+  width: fit-content;
   border: var(--color-blue);
   color: var(--color-white);
 }
