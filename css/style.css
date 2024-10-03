@@ -314,33 +314,39 @@ h3 {
   padding-bottom: 100px;
 }
 
-.video__rabota{
+.video__contetnt{
   display: flex;
   flex-direction: column;
   gap: 50px;
   align-items: center;
 }
 
-.video__rabota--h{
+.video__title{
   font-family: var(--font-family-accept);
   font-size: 32px;
   color: var(--color-black);
   text-align: center;
 }
 
-.video__rabota--p{
+.video__text{
   max-width: 540px;
   text-align: center;
   text-indent: 34px;
 }
 
-.video__vidos{
+.video__block{
   display: flex;
   flex-direction: column;
   align-items:center;
 }
-
-.video__vidos-img1{
+.video__img{
+  position: relative;
+  max-width: 1110px;
+  max-height: 600px;
+  width: 100%;
+  inline-size: 6;
+}
+.video__background{
   position: relative;
   max-width: 1110px;
   max-height: 600px;
@@ -348,7 +354,7 @@ h3 {
   inline-size: 6;
 }
 
-.video__vidos-img2{
+.video__play{
   position: absolute;
   max-width: 100px;
   max-height: 100px;
