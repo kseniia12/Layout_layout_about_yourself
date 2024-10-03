@@ -133,12 +133,12 @@ h3 {
   color: var(--color-white);
 }
 
-.main__about {
+.main__autobiography{
   display: flex;
   flex-direction: column;
 }
 
-.main__about-about {
+.autobiography__block {
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -147,38 +147,39 @@ h3 {
   padding: 112px 0px 100px 0px;
 }
 
-.main__abou-lorem {
+.autobiography__text {
   max-width: 540px;
   text-align: center;
   text-indent: 34px;
   font-family: var(--font-family-base);
 }
 
-.main__about-project {
+.autobiography__project {
   background-color: var(--color-blue);
   display: flex;
   justify-content: center;
   gap: 49px;
 }
 
-.main__about-project-item {
+.project__container {
   padding: 100px 0px 100px 0px;
   display: flex;
   gap: 20px;
   justify-content: center;
 }
 
-.main__about-project-item-img{
+.project__photo{
+  display: block;
   max-width: 50px;
   max-height: 50px;
 }
 
-.main__about-project-p1{
+.project__number{
   font-size: 21px;
   font-family: var(--font-family-accept);
   color: var(--color-white);
 }
-.main__about-project-p2{
+.project__content{
   color: var(--color-white);
 }
 .skills{
