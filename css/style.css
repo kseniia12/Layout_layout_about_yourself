@@ -233,7 +233,7 @@ h3 {
   display: flex;
   justify-content: center;
 }
-.form__secction{
+.form__container{
   display: flex;
   flex-direction: column;
   align-items:center;
@@ -242,20 +242,20 @@ h3 {
   gap: 20px;
 }
 
-.form__title{
+.form__block{
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-.form__title--h{
+.form__title{
   font-size: 32px;
   color: var(--color-black);
   font-family: var(--font-family-accept);
   text-align: center;
 }
 
-.form__title--t{
+.form__text{
   text-align: center;
   line-height: 164.1%;
   text-indent: 34px;
@@ -268,11 +268,11 @@ h3 {
   justify-content: space-between;
   gap: 20px;
 }
-.form__input-groap{
+.group__input{
   display: flex;
   gap: 30px;
 }
-.form__input-in{
+.finput__name{
   max-width: 255px;
  padding-left: 20px;
   text-align: left;
@@ -280,13 +280,13 @@ h3 {
   inline-size: 255px;
   line-height: 50px;
 }
-.form__input-in2{
+.input__messages{
   width: 540px;
   line-height: 17px;
   height: 175px;
   padding-left: 20px;
 }
-.first-screen__button{
+.button--form{
   background-color: var(--color-blue);
   padding: 20px 19px 20px 19px;
   border: var(--color-blue);
