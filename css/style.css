@@ -206,19 +206,19 @@ h3 {
   gap: 50px;
 }
 
-.skills__spisok-h{
+.skills__title{
   font-size: 32px;
   font-family: var(--font-family-accept);
   color: var(--color-black);
 }
 
-.skills__spisok-div{
+.skills__block{
   display: flex;
   flex-direction: column;
   gap: 39.76px;
 }
 
-.skills__o{
+.skills__content{
   display: flex;
   flex-direction: column;
 }
