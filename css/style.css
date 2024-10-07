@@ -77,6 +77,7 @@ h3 {
   color: #34547A;
   font-size: 48px;
   text-align: center;
+  text-decoration: none;
 }
 
 .menu__list {
@@ -304,6 +305,9 @@ h3 {
   inline-size: 255px;
   line-height: 50px;
 }
+textarea{
+  color: var(--color-text);
+}
 .input__messages{
   width: 540px;
   line-height: 17px;
@@ -389,38 +393,71 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
+
+
+
+
+
+
+
+
 .img{
-  /* display: flex; */
   background-color: var(--color-white);
+  display: grid;
+  justify-content: center;
 }
 .img__container{
+  max-height: 1920px;
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  /* display: flex;
-  flex-wrap: wrap;
-  padding: 28px 0px 28px 0px;
-  max-height: 1920px; */
+  grid-template-columns: repeat(4, 480px);
+  grid-template-rows: repeat(2, 480px);
+  padding: 10px 0px;
 }
 
-/* .img__photo{
-  max-width: 480px;
-  min-width: 480px;
-  width: 100%;
-} */
+.img__photo{
+  width: 480px;
 
-
+  height: 480px;
+  object-fit: cover;
+  z-index: 4;
+}
 
 .img__list{
   width: 480px;
   height: 480px;
   width: 100%;
-  background-image: url("../img/TaskBoard.png");
+  position: relative;
+  z-index: 6;
 }
-.img__list:hover{
+
+
+
+
+.img__list:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #34547A;
+  opacity: 0.8;
   width: 480px;
-  height: 480px;
-  width: 100%;
-  background-color:#EEEFF1;
+  height: 480px; 
+}
+
+.img__list:hover::after {
+  content: url('../img/optic.png');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.button__form{
+  margin-bottom: 50px;
 }
 
 .footer{
@@ -470,10 +507,188 @@ h3 {
   width: 100%;
 }
 @media (max-width: 375px) {
-  .header__menu{
-      display: none;
-  } 
-  .header__navigation{
+  .header__container{
     justify-content: center;
+    gap: 67px;
   }
+  .header__image{
+  max-width: 298px;
+  max-height: 195px;
+  }
+
+  
+  .menu__list{
+      display: none;
+  }
+  .header__content{
+    flex-direction: column;
+    align-items:center;
+    gap: 44px;
+  }
+  .desing__content{
+    align-items: center;
+    max-width: 341px;
+  }
+  .design__title{
+    font-size: 36px;
+    text-align: center;
+  }
+  .design__text{
+    text-align: center;
+    text-indent: 26px;
+  }
+  .autobiography__block{
+    padding: 91px 26px 82px 26px;
+  }
+  .autobiography__project {
+    flex-wrap: wrap;
+    align-items:center;
+    padding: 75px 18px;
+    justify-content: space-between;
+  }
+  .project__container {
+    padding: 0px;
+    display: flex;
+    max-width: 141px;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+  .skills__container{
+    flex-direction: column-reverse;
+    margin-top: 82px;
+    max-width: 357px;
+    gap: 98px;
+  }
+  .skills__title{
+    text-align: center;
+  }
+  .video__container {
+    padding-top: 43px;
+  }
+  .video__contetnt {
+    gap: 34px;
+  }
+.video__text{
+  max-width: 323px;
+}
+.video__img{
+  max-width: 339px;
+  max-height: 185px;
+}
+
+  .video__play {
+    max-width: 75px;
+    max-height: 75px;
+  }
+  .form__container {
+    max-width: 342px;
+    gap: 20px; 
+}
+  .group__input{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    gap: 22px;
+  }
+  .footer__container {
+    flex-direction: column;
+    align-items:center;
+    gap: 30px;
+}
+  .footer__info{
+    align-items:center;
+  }
+
+
+  .img__container { 
+    grid-template-columns:  188px  188px; 
+    grid-template-rows:  188px  188px  188px 188px; 
+    padding: 34px 0px;
+  }
+.img__list{
+  max-height: 188px;
+  display: grid;
+}
+.img__photo{
+  max-width: 188px;
+  max-height: 188px;
+  order: 1;
+  display: block;
+  z-index: 2;
+}
+.img__list:nth-child(1) { order: 1; } /* Стена задач */
+.img__list:nth-child(2) { order: 2; } /* Рабочий компьютер */
+.img__list:nth-child(3) { order: 4; } /* Стена задач */
+.img__list:nth-child(4) { order: 3; } /* Рабочий компьютер */
+.img__list:nth-child(5) { order: 6; } /* Рабочий компьютер */
+.img__list:nth-child(6) { order: 5; } /* Стена задач */
+.img__list:nth-child(7) { order: 7; } /* Рабочий компьютер */
+.img__list:nth-child(8) { order: 8; } /* Стена задач */
+
+.img__list:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #34547A;
+  opacity: 0.8;
+  width: 188px;
+  height: 188px; 
+  z-index: 6;
+}
+
+.img__list:hover::after {
+  content: url('../img/optic.png');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 6;
+}
+
+.form__block {
+  gap: 34px;
+}
+.form__text {
+  max-width: 322px;
+}
+.form__input {
+  margin-top: 28px;
+}
+
+.button__form {
+  margin-bottom: 100px;
+}
+
+  /* .img{
+    display: grid;
+    justify-content: center;
+    
+    position: relative;
+    max-width: 375px;
+  }
+  .img__container{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, auto-fill, minmax(188px, 1fr));
+  } */
+  
+/*    .img__photo{
+    width: 188px;
+    height: 188px;
+    object-fit: cover;
+  } */
+ /* 
+  .img__list{
+    width: 480px;
+    height: 480px;
+    width: 100%;
+    position: relative;
+    z-index: 6;
+  } */
 }

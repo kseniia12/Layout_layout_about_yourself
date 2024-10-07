@@ -14,9 +14,8 @@
 
     <header class="header" id="C1">
         <div class="header__container">
-            <div>
                 <nav class="header__navigation">
-                    <p class="header__logo">WD</p>
+                    <a href="#" class="header__logo">WD</a>
                     <ul class="menu__list">
                         <li><a href="#C1" class="menu__link_activ">ГЛАВНАЯ</a></li>
                         <li><a href="#C2" class="menu__link">ОБ АВТОРЕ</a></li>
@@ -25,11 +24,10 @@
                         <li><a href="#C5" class="menu__link">КОНТАКТЫ</a></li>
                     </ul>
                 </nav>
-            </div>
             <div class="header__content">
                 <img class="header__image" src="./img/Computer.png" alt="Компьютер">
                 <div class="desing__content">
-                    <h1 class="design__title">Дизайн и верстка</h1>
+                    <h2 class="design__title">Дизайн и верстка</h2>
                     <div class="design__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</div>
                     <button class="button" href="#">НАПИСАТЬ МНЕ</button>
                 </div>
@@ -127,7 +125,7 @@
             <section class="video" id="C3">
                 <div class="video__container">
                     <div class="video__contetnt">
-                        <p class="video__title">Как я работаю</p>
+                        <h3 class="video__title">Как я работаю</h3>
                         <p class="video__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                     </div>
                     <div class="video__block">
@@ -139,12 +137,21 @@
                 </div>
             </section>
 
-            <section class="img" id="C4">
-                <div class="img__container">
+             <section class="img" id="C4">
+               <div class="img__container">
                     <div class="img__list">
-                        <!-- <img class="img__photo" src="./img/TaskBoard.png" alt="Стена задач"> -->
+                        <img class="img__photo" src="./img/TaskBoard.png" alt="Стена задач">
                     </div>
-                    <!-- <div class="img__list">
+                    <div class="img__list">
+                        <img class="img__photo" src="./img/WorkComputer.png" alt="Рабочий компьютер">
+                    </div>
+                    <div class="img__list">
+                        <img class="img__photo" src="./img/TaskBoard.png" alt="Стена задач">
+                    </div>
+                    <div class="img__list">
+                        <img class="img__photo" src="./img/WorkComputer.png" alt="Рабочий компьютер">
+                    </div>
+                    <div class="img__list">
                         <img class="img__photo" src="./img/WorkComputer.png" alt="Рабочий компьютер">
                     </div>
                     <div class="img__list">
@@ -154,17 +161,17 @@
                         <img class="img__photo" src="./img/WorkComputer.png" alt="Рабочий компьютер">
                     </div>
                     <div class="img__list">
-                        <img class="img__photo" src="./img/WorkComputer.png" alt="Рабочий компьютер">
-                    </div>
-                    <div class="img__list">
                         <img class="img__photo" src="./img/TaskBoard.png" alt="Стена задач">
-                    </div>
-                    <div class="img__list">
-                        <img class="img__photo" src="./img/WorkComputer.png" alt="Рабочий компьютер">
-                    </div>
-                    <div class="img__list">
-                        <img class="img__photo" src="./img/TaskBoard.png" alt="Стена задач">
-                    </div> -->
+                    </div> 
+                    <!-- <img class="img__photo" src="./img/TaskBoard.png" alt="Стена задач">
+                    <img class="img__photo" src="./img/WorkComputer.png" alt="Рабочий компьютер">
+                    <img class="img__photo" src="./img/TaskBoard.png" alt="Стена задач">
+                    <img class="img__photo" src="./img/WorkComputer.png" alt="Рабочий компьютер">
+                    <img class="img__photo" src="./img/WorkComputer.png" alt="Рабочий компьютер">
+                    <img class="img__photo" src="./img/TaskBoard.png" alt="Стена задач">
+                    <img class="img__photo" src="./img/WorkComputer.png" alt="Рабочий компьютер">
+                    <img class="img__photo" src="./img/TaskBoard.png" alt="Стена задач"> -->
+
                 </div>
             </section>
 
@@ -172,7 +179,7 @@
                 <div class="form__container">
 
                     <div class="form__block">
-                        <p class="form__title">Хотите веб-сайт?</p>
+                        <h4 class="form__title">Хотите веб-сайт?</h4>
                         <p class="form__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                     </div>
 
@@ -181,12 +188,16 @@
                             <input class="input__name" type="text" placeholder="Ваше имя">
                             <input class="input__name" type="text" placeholder="Ваш e-mail">
                         </form>
-                        <form class="group__input">
+                       <!--  <form class="group__input">
                             <input class="input__messages" type="text" placeholder="Сообщение">
-                        </form>
+                        </form> -->
+                        <textarea id="story" name="story" rows="9,7">
+    
+    Сообщение
+                        </textarea>
                     </div>
 
-                    <button class="button">ОТПРАВИТЬ</button>
+                    <button class="button button__form">ОТПРАВИТЬ</button>
                 </div>
             </section>
         </main>
@@ -212,5 +223,3 @@
 
 </body>
 </html>
-
-
